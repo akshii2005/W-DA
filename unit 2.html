@@ -1,0 +1,148 @@
+<!doctype HTML> 
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title> <U> UNIT-2 </title> 
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}  
+  </style>
+</head> 
+<body>
+<header> <h1> <center> <U> UNIT-2 </h2> </u> </header> 
+<h2> (1) Creating DOM </h2>
+<p> When a web page is loaded, the browser creates a Document Object Model of the page.<br>
+The HTML DOM model is constructed as a tree of Objects: <br>
+To create a DOM element, you use the createElement() method.<br>
+const element = document.createElement(htmlTag);<br>
+Firstly, bytes are converted to HTML characters and then to Tokens. In the next step, Tokens are converted into nodes. Nodes are different objects with certain properties. After the nodes are created, the DOM tree is created. </p>
+<h2> (2) Doctype Character Encoding </h2>
+<p> . For the HTML syntax of HTML5, setting the character encoding is done by using a meta element with a charset attribute that specifies the encoding within the first 1024 bytes of the document. <br> 
+An encoding defines a mapping between bytes and text. A sequence of bytes allows for different textual interpretations. By specifying a particular encoding (such as UTF-8), we specify how the sequence of bytes is to be interpreted.<br>
+For example, in HTML we normally declare a character encoding of UTF-8, using the following line: <br>
+< meta charset="utf-8" /> </p>
+<h2> (3) Deprecated Elements </h2>
+<p> A deprecated element or attribute is one that has been outdated by newer constructs. Deprecated elements are defined in the reference manual in appropriate locations, but are clearly marked as deprecated. Deprecated elements may become obsolete in future versions of HTML.<br>
+deprecated elements are those elements that are allowed, but not recommended and are being replaced by newer ones. So, a "deprecated code" means that it is not recommended to use as there is a better alternative in that software to use instead. </p>
+<h2> (4) HTML Document </h2>
+<p> An HTML document is a file containing hypertext markup language. HTML code is based on tags, or hidden keywords, which provide instructions for formatting the document. A tag starts with an angle bracket and the 'less than' sign: '<'. The tag ends with an angle bracket and the 'greater than' sign '>'. </p> 
+<h2> (5) Section Tag </h2> 
+<p> The < section> tag defines a section in a document. <br> 
+It is a structural HTML element used to group together related elements. Each < section> typically includes one or more heading elements and additional elements presenting related content. Display block Usage semantic | structural. </p> 
+<p> for example: <br>
+< section> <br>
+< h2>WWF History< /h2> <br> 
+< p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the cons ervation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.< /p><br>
+< section> <br>
+< h2>WWF History< /h2> <br> 
+< p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.< /p> <br> 
+< /section> </p>
+<h2> (6) Article Tag </h2> 
+<p> The < article> tag specifies independent, self-contained content. <br> 
+An article should make sense on its own and it should be possible to distribute it independently from the rest of the site. </p> 
+<p> For example : <br>
+< p> < article> <br>
+< h2>Google Chrome< /h2> <br>
+< p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!< /p>
+< /article>
+<h2> (7) Aside Tag </h2> 
+<p> The < aside> tag defines some content aside from the content it is placed in. <br> 
+The aside content should be indirectly related to the surrounding content. </p>
+<p> < p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!< /p> <br>
+< aside> <br> 
+< h4>Epcot Center< /h4> <br>
+< p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.< /p>
+< /aside> <br> </p>
+<h2> (8) Header Tag </h2>
+<p> The < header> element represents a container for introductory content or a set of navigational links. <br>
+A < header> element typically contains: <br>
+one or more heading elements (< h1> - < h6>) <br>
+logo or icon <br> 
+authorship information </p> 
+<p> For example: <br>
+< header> <br>
+  < h1>Main page heading here< /h1> <br> 
+  < p>Posted by John Doe< /p> <br>
+< /header> </p> 
+<h2> (9) Footer Tag </h2>
+<p> The < footer> tag defines a footer for a document or section. <br>
+A < footer> element typically contains: <br> 
+authorship information <br>
+copyright information <br>
+contact information <br>
+sitemap <br>
+back to top links <br>
+related documents </p>
+<p> For example: <br> 
+< footer> <br> 
+  < p>Author: Hege Refsnes< /p> <br>
+  < p>< a href="mailto:hege@example.com">hege@example.com< /a>< /p> <br>
+< /footer> </p>
+<h2> (10) Nav Tag </h2>
+<p> The < nav> tag defines a set of navigation links. <br>
+Notice that NOT all links of a document should be inside a < nav> element. The < nav> element is intended only for major blocks of navigation links. <br>
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content. </p>
+<p> For example: <br>
+< nav> <br>
+  < a href="/html/">HTML< /a>  <br>
+  < a href="/css/">CSS< /a>  <br>
+  < a href="/js/">JavaScript< /a> <br>
+  < a href="/python/">Python< /a> <br>
+< /nav> </p>
+<h2> (11) Script Tag </h2>
+<p> The < script> tag is used to embed a client-side script (JavaScript). <br>
+The < script> element either contains scripting statements, or it points to an external script file throug h the src attribute. </p>
+<p> For example <br>
+< script> <br>
+document.getElementById("demo").innerHTML = "Hello JavaScript!"; <br>
+< /script> </p> 
+<h2> (12) Link Tag </h2> 
+<p> The < link> tag defines the relationship between the current document and an external resource. <br>
+The < link> tag is most often used to link to external style sheets or to add a favicon to your website. <br>
+The < link> element is an empty element, it contains attributes only. </p>
+<P> Link element is use to defines the relationshi between the current document and external source <br>
+< link> tag is often used to link external style sheets or to add a the link </ link> <br> </p>
+<p> For Example: <br>
+< head> <br> 
+< link rel="stylesheet" <br>
+href="style.css"> <br>
+</ head> </p>
+<h2> (13) Script Tag </h2>
+<p> The < script> tag is used to embed a client-side script (JavaScript). <br>
+<p> For example: <br>
+The < script> element either contains scripting statements, or it points to an external script file through the src attribute. </p>
+< script> <br>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";<br>
+< /script> </p>
+<h2> (14) Web Form </h2>
+<p> A webform, web form or HTML form on a web page allows a user to enter data that is sent to a server for processing. <br>
+Forms can resemble paper or database forms because web users fill out the forms using checkboxes, radio buttons, or text fields. <br>
+For example, forms can be used to enter shipping or credit card data to order a product, or can be used to retrieve search results from a search engine. </p>
+<p> Common types of web forms are as follows: <br>
+<ul><li> Contact form </li> <br>
+<li> Registration form </li> <br>
+<li> Sign-in Form </li> <br>
+<li>Lead generation form </li> <br>
+<li> Order form </li> <br>
+<li> Survey form </li> <br>
+<li> Search form </li> <br>
+<li> Email form </li> </p>
+<p> The < form> tag in HTML is used to define the form in an HTML document. This tag is a container for all other input elements used within this form tag to obtain user input. <br>
+Different input types, such as text fields, checkboxes, radio buttons, submit buttons, etc., are used inside the <form> tag to obtain user inputs such as usernames, emails, passwords, etc. According to the input field type, these inputs are manually typed or selected by the user. </p>
+
+
